@@ -18,8 +18,6 @@ argmax_{t} X = argmax_{t} Sb^2
 换言之，如果使 Sb^2 = w0 * w1 * (M0 - M1) ^2 最大，就可以得到最好的二值化阈值 t。
 '''
 img = cv2.imread('imori.jpg')
-cv2.imshow('imori', img)
-cv2.waitKey(0)
 
 img2 = img.copy().astype(np.float32)
 r = img2[..., 2]
